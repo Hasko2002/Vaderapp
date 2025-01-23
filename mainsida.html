@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VäderApp</title>
+    <title>WeatherHub</title>
     <link rel="stylesheet" href="design.css">
-    <script src="script.js"></script>
+    <script src="func.js" defer></script>
+    <script src="https://kit.fontawesome.com/0b30da60df.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>
-        Välommen till Hassan Weather App
-    </h1>
+    <div id="vädercontainer">
+        <h2>Välkommen till WeatherHub</h2>
+        <p>Denna webbplats ger dig den senaste väderinformationen för din plats.<br>
+            Du kan se aktuella temperaturer, prognoser och mycket mer för att planera din dag bättre.</p>
+
+        <div class="search-container">
+            <input type="text" id="stad" placeholder="Skriv in din stad">
+            <button id="sök-knapp"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="weather-info">
+            <img id="väder-ikon" alt="Väderikon">
+            <div id="temperaturer"></div>
+            <div id="väderinformationen"></div>
+            <div id="väderprognos"></div>
+        </div>
+    </div>
 </body>
+
 </html>
